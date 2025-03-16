@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  root: ":root";
+  include: ;
+  exclude: ;
+  /* prefix: ; */
+  logs: false;
+}
+
+[data-theme="light"] {
+  .sign-btn {
+    background-color: #ffffff;
+  }
+}
+
+[data-theme="dark"] {
+  .sign-btn {
+    background-color: #000000;
+  }
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
